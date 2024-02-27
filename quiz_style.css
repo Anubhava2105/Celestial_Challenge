@@ -12,8 +12,9 @@
     scrollbar-width: thin;
 }
 body{
-    background-image: url("../assets/Default_milky_way_edited.png");
+    background-image: url("../assets/Default_milky_way_jpg.jpg");
     background-attachment:fixed;
+    background-color:#44016e;
     background-size: 100vw 100vh;
     font-family:"Bayon";
     letter-spacing: 2.5px;
