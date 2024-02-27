@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "SK-cuber";
+  src: url(../fonts/SKCuber-ExpandedRounded.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: azure;
+  text-transform: uppercase;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("../assets/Default_milky_way_edited.png");
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+.profile {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.profile .fa-user {
+  color: azure;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left:1rem;
+  font-family: SK-cuber;
+  letter-spacing: 3px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.1em;
+}
+.welcome {
+  font-size: 5rem;
+  margin: 1rem;
+  padding: 0.25rem;
+  font-family: "Bayon";
+  text-align: center;
+}
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  gap: 3rem;
+}
+.info {
+  font-size: 1.5rem;
+  font-family: "Bayon";
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 3rem;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  padding: 1rem;
+  max-width: 650px;
+  height: 50vh;
+}
+.content-left .btn {
+  background-color: #16212d;
+  color: #fff;
+  width: 375px;
+  height: 40px;
+  opacity: 1;
+  box-shadow:1px 1px 1px azure;
+}
+.content .btn{
+  background-color: #44016e;
+  color: #fff;
+  font-size:2rem;
+  width: 375px;
+  height: 60px;
+  opacity: 1;
+  position:absolute;
+  top:1400px;
+  right:575px;
+  box-shadow:1px 1px 1px azure;
+}
+.btn:hover {
+  background-color: #44016e;
+}
+.sign-right {
+  margin-left:3rem;
+  padding: 1rem;
+  background-color: #16212d;
+  height: 60vh;
+  width: 45vw;
+  border-radius: 40px;
+}
+.sign {
+  text-shadow: 2.5px 2.5px #6803a8;
+  font-size: 2.5rem;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  gap: 0.25rem;
+  box-shadow: #314051;
+}
+label {
+  align-self: flex-start;
+  margin-left: 6rem;
+  font-family: "Bayon";
+  font-size: 1rem;
+  text-shadow: 1px 1px #6803a8;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 70%;
+  padding: 10px;
+  margin: 2px 0 15px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  color: #44016e;
+  outline: none;
+}
+#message {
+  display: none;
+  background: #16212d;
+  color: #fff;
+  position: relative;
+  padding: 20px;
+  margin-top: 13rem;
+  width: 43vw;
+  border-radius: 30px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: #0b8c0f;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: #801507;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #44016e;
+  color: white;
+  font-family: "Bayon";
+  font-size: 1rem;
+  padding: 5px 5px;
+  border-radius: 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+

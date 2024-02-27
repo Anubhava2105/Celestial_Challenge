@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Celestial Challenge</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h1>Celestial</h1><h1>Challenge</h1>
+            </div>
+            <div>
+                <a href="#" class="profile"><i class="fa-solid fa-user"></i></a></div>
+        </nav>
+    </header>
+    <!-- Main section -->
+    <div class="main-container">
+        <div class="welcome">
+            <h1 class="welcome">Welcome to the celestial challenge !!!</h1>
+        </div>
+        <div class="info-container">
+            <div class="content-left">
+                <p class="info">Embark on an intergalactic journey of knowledge and discovery with our space-themed quiz
+                    platform! Are you ready to explore the mysteries of the cosmos, challenge your understanding of the
+                    universe, and test your celestial savvy?
+                </p>
+                <br>
+                <p class="info">Sign up now to unlock a universe of knowledge and fun!</p>
+            </div>
+            <div class="sign-right">
+                <h1 class="welcome sign">Sign Up</h1>
+                <form class="signup">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" name="username" required autocomplete="username">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" name="password" minlength="8"
+                        autocomplete="new-password">
+                    <label for="password_repeat">Confirm Password</label>
+                    <input type="password" id="check_password" placeholder="Confirm password" minlength="8" name="repeat_password"
+                        required autocomplete="new-password" oninput="checkPassword()">
+                    <p id="feedback"></p>
+                    <button type="button" class="btn" onclick="location.href='quiz.html'" target="_blank">Sign Up and Play now</button>
+                </form>
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                   <strong><p id="letter" class="invalid">A lowercase letter</p>
+                    <p id="capital" class="invalid">A uppercase letter</p>
+                    <p id="number" class="invalid">A number</p>
+                    <p id="length" class="invalid">Minimum 8 characterss</p></strong>
+                </div>
+            </div>
+            <!-- <div class="content"><a href="quiz.html" target="_blank"><button type="submit" class="btn">Play Now</button></a></div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

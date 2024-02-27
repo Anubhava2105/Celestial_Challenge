@@ -1,0 +1,101 @@
+@font-face{
+    font-family:'SK-cuber';
+    src:url(../fonts/SKCuber-ExpandedRounded.woff2) format('woff2');
+}
+
+*{
+    margin:0;
+    padding:0;
+    color:azure;
+    text-transform:uppercase;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("../assets/Default_milky_way_edited.png");
+    background-attachment:fixed;
+    background-size: 100vw 100vh;
+    font-family:"Bayon";
+    letter-spacing: 2.5px;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+    overflow:hidden;
+}
+.profile{
+    font-size:2rem;
+    margin:1rem;
+    padding:.5rem;
+
+
+}
+h1{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left:1rem;
+    font-family: SK-cuber;
+    letter-spacing: 3px;
+}
+.app{
+    background-color: #16212d;
+    width:90%;
+    max-width:600px;
+    margin:60px auto 0;
+    border-radius: 10px;
+    padding:30px;
+}
+.app h1{
+    font-size:25px;
+    color:azure;
+    font-weight:600;
+    border-bottom:1px solid #01ab2c;
+    padding-bottom:30px;
+}
+.quiz{
+    padding:30px 0;
+}
+.quiz h2{
+    font-size:1rem;
+    color:azure;
+}
+.btn{
+    background-color: #44016E;
+    color:azure;
+    font-weight:500;
+    font-size: 15px;
+    font-family: "Bayon";
+    width:100%;
+    border:1px solid #01ab2c;
+    padding:10px;
+    margin:10px 0;
+    text-align:left;
+    border-radius:10px;
+    cursor:pointer;
+}
+.btn:hover:not([disabled]){
+    background:#01ab2c;
+    color:#44016E;
+}
+.btn:disabled{
+    cursor:no-drop;
+}
+#next-btn{
+    background:#001e4d;
+    color:#fff;
+    font-weight:500;
+    width:150px;
+    border:0;
+    padding:10px;
+    margin:10px auto 0;
+    border-radius: 10px;
+    cursor:pointer;
+    display:none;
+}
+.correct{
+    background:#015806;
+}
+.incorrect{
+    background: #900202;
+}
