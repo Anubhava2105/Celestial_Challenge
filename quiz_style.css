@@ -9,6 +9,7 @@
     color:azure;
     text-transform:uppercase;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
 body{
     background-image: url("../assets/Default_milky_way_edited.png");
@@ -28,8 +29,6 @@ body{
     font-size:2rem;
     margin:1rem;
     padding:.5rem;
-
-
 }
 h1{
     font-size: 2rem;
