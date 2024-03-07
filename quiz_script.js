@@ -139,12 +139,12 @@ function startQuiz(){
 }
 function showQuestion(){
   resetState();
-  let randomIndex=Math.floor(Math.random()*questions.length);
+  //let randomIndex=Math.floor(Math.random()*questions.length);
   let currentQuestion=questions[currentQuestionIndex];
   let questionNo= currentQuestionIndex+1;
   questionElement.innerHTML=questionNo + ". " + currentQuestion.question;
   currentQuestion.answer.forEach(answer=>{
-      const button=document.createElement("button"); // Corrected button creation
+      const button=document.createElement("button"); 
       button.innerHTML=answer.text;
       button.classList.add("btn");
       answerButtons.appendChild(button);
@@ -163,7 +163,7 @@ function resetState(){
 }
 function selectAnswer(e){
   const selectedBtn=e.target;
-  const isCorrect=selectedBtn.dataset.correct==="true"; // Corrected dataset comparison
+  const isCorrect=selectedBtn.dataset.correct==="true";
   if(isCorrect){
       selectedBtn.classList.add("correct");
       score++;
@@ -172,7 +172,7 @@ function selectAnswer(e){
       selectedBtn.classList.add("incorrect");
   }
   Array.from(answerButtons.children).forEach(button=>{
-      if(button.dataset.correct==="true"){ // Corrected dataset comparison
+      if(button.dataset.correct==="true"){ 
           button.classList.add("correct");
       }
       button.disabled=true;
